@@ -1,7 +1,12 @@
+#!/usr/bin/python3
+
 import os
 import discord
+import subprocess
 
-DISCORD_API_KEY = os.environ.get("DISCORD_API_KEY")
+tokentxt = open('token.txt', 'r')
+TOKEN = (tokentxt.read())
+tokentxt.close()
 
 bot = discord.Bot()
 
@@ -9,4 +14,9 @@ bot = discord.Bot()
 async def ping(ctx):
     await ctx.respond(f"Pong: {bot.latency}")
 
-bot.run(DISCORD_API_KEY)
+@bot.slash_command(description="Get neofetch output from host")
+async def neofetch(ctx):
+    neofetchOut = subprocess.getoutput("neofetch --stdout")
+    await ctx.respond(neofetchOut)
+
+bot.run(TOKEN)
