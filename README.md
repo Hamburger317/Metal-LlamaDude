@@ -8,21 +8,26 @@ Based off the excellent [PyCord](https://github.com/Pycord-Development/pycord) A
 
 1. Create a bot using the [Discord Developer](https://discordpy.readthedocs.io/en/stable/discord.html) panel.
 
-2. Using your operating system's method, set `DISCORD_API_KEY` to your token.
+2. Create a file containing your bot token.
+
+    ```sh
+    echo "YOUR_TOKEN" >> token.txt
+    ```
 
 3. Clone the Git repository.
 
-```sh
-git clone https://github.com/Hamburger317/Metal-LlamaDude.git
-```
+    ```sh
+    git clone https://github.com/Hamburger317/Metal-LlamaDude.git
+    ```
 
 4. Install dependencies using `pip`.
 
-```sh
-pip install -r requirements.txt
-```
+    ```sh
+    pip install -r requirements.txt
+    ```
 
 5. Run the main script.
-```sh
-python bot.py
-```
+
+    ```sh
+    python bot.py
+    ```
