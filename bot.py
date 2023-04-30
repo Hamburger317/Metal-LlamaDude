@@ -4,6 +4,8 @@ import os
 import discord
 import subprocess
 
+import mllama.metalmath
+
 tokentxt = open('token.txt', 'r')
 TOKEN = (tokentxt.read())
 tokentxt.close()
@@ -18,5 +20,7 @@ async def ping(ctx):
 async def neofetch(ctx):
     neofetchOut = subprocess.getoutput("neofetch --stdout")
     await ctx.respond(neofetchOut)
+
+bot.add_application_command(mllama.metalmath.math_commands)
 
 bot.run(TOKEN)
