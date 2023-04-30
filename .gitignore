@@ -130,3 +130,5 @@ dmypy.json
 
 # Just to be sure
 token.txt
+.vscode/
+.idea/
