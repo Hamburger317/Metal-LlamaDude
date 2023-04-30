@@ -1,8 +1,10 @@
 # Metal LlamaDude
 
-Finally after 3 years, the offical Planet Hamburger Discord bot is coming to fruition.
+Finally after 3 years, the official Planet Hamburger Discord bot is coming to fruition.
 
-Based off the excellent [PyCord](https://github.com/Pycord-Development/pycord) API wrapper for Discord and hosted using Replit, the LlamaDude bot aims to be a simple utility bot for Planet Hamburger specific problems.
+Based off the excellent [PyCord](https://github.com/Pycord-Development/pycord) API wrapper for Discord and hosted using drawings of gay cats.
+
+Metal LlamaDude is the Swiss army knife of Discord bots.
 
 ## Using the Bot
 
